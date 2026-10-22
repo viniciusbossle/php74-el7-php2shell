@@ -1,0 +1,34 @@
+LICENSE AND PROVENANCE
+======================
+
+This repository redistributes rebuilt RPM packages of PHP 7.4 for Enterprise Linux 7.
+It is an unofficial community rebuild and is not affiliated with or endorsed by the PHP
+project, Remi Collet, Red Hat, or any Linux distribution.
+
+Packaged software
+-----------------
+- PHP itself is distributed under the PHP License, version 3.01.
+  See https://www.php.net/license/ for the authoritative text. Individual bundled
+  components (Zend Engine, SQLite, etc.) carry their own licenses as stated in the PHP
+  source distribution. Each binary RPM declares its license in its own metadata
+  (`rpm -qi <package>` shows the `License:` field).
+
+Packaging
+---------
+- The RPM spec file and all patches — including the php2shell mitigation patch
+  (CVE-2026-109618 / CVE-2026-109619) — are the work of Remi Collet and come from his
+  `php74` package at https://rpms.remirepo.net/ and https://git.remirepo.net/.
+  They retain their upstream licensing. This repository does not relicense them.
+
+This repository's own additions
+-------------------------------
+- The documentation (README, BUILD notes), the two EL7 build adjustments described in
+  BUILD.md, and the repository metadata are released into the public domain (CC0 1.0).
+  Do whatever you want with them; no warranty.
+
+NO WARRANTY
+-----------
+These packages are provided "as is", without warranty of any kind. PHP 7.4 and CentOS 7
+are end-of-life. Use these packages at your own risk, as a temporary measure while you
+plan a migration to a supported platform. Verify the signatures and checksums, and review
+the source (the published src.rpm) before trusting anything here on your systems.
