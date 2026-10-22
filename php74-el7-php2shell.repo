@@ -1,0 +1,6 @@
+[php74-el7-php2shell]
+name=PHP 7.4 el7 php2shell rebuild
+baseurl=https://viniciusbossle.github.io/php74-el7-php2shell/7/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=https://viniciusbossle.github.io/php74-el7-php2shell/RPM-GPG-KEY-php74-el7
